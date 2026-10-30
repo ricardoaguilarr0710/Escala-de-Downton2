@@ -5,38 +5,38 @@ const riskResult = document.getElementById('risk-result');
 function getCareMeasures(total) {
   if (total > 2) {
     return `
-      <div class="care-measures">
-        <p><strong>Medidas de cuidado y precauciones:</strong></p>
-        <ul>
-          <li>Evitar caminar descalzo o sobre superficies resbaladizas.</li>
-          <li>Usar calzado con suela antideslizante y bien ajustado.</li>
-          <li>Instalar barras de apoyo, buena iluminación y retirar obstáculos en casa.</li>
-          <li>Solicitar ayuda al movilizarse si presenta mareos, debilidad o pérdida de equilibrio.</li>
-          <li>Revisar la medicación y consultar al profesional si aumenta el riesgo de caídas.</li>
+      <div class="care-measures" style="color: #1c1c1c; line-height: 1.5;">
+        <p style="color: #1c1c1c; margin-bottom: 0.5rem;"><strong>Medidas de cuidado y precauciones:</strong></p>
+        <ul style="margin: 0.5rem 0 0 1.25rem; color: #1c1c1c; padding-left: 1rem;">
+          <li style="color: #1c1c1c;">Evitar caminar descalzo o sobre superficies resbaladizas.</li>
+          <li style="color: #1c1c1c;">Usar calzado con suela antideslizante y bien ajustado.</li>
+          <li style="color: #1c1c1c;">Instalar barras de apoyo, buena iluminación y retirar obstáculos en casa.</li>
+          <li style="color: #1c1c1c;">Solicitar ayuda al movilizarse si presenta mareos, debilidad o pérdida de equilibrio.</li>
+          <li style="color: #1c1c1c;">Revisar la medicación y consultar al profesional si aumenta el riesgo de caídas.</li>
         </ul>
       </div>
     `;
   } else if (total >= 1) {
     return `
-      <div class="care-measures">
-        <p><strong>Medidas de cuidado y precauciones:</strong></p>
-        <ul>
-          <li>Reforzar la educación del paciente sobre prevención de caídas.</li>
-          <li>Promover la atención al caminar y evitar prisas o cambios bruscos de postura.</li>
-          <li>Mantener espacios libres de obstáculos y con buena iluminación.</li>
-          <li>Valorar la necesidad de apoyo físico o ayudas técnicas si el paciente presenta inestabilidad.</li>
+      <div class="care-measures" style="color: #1c1c1c; line-height: 1.5;">
+        <p style="color: #1c1c1c; margin-bottom: 0.5rem;"><strong>Medidas de cuidado y precauciones:</strong></p>
+        <ul style="margin: 0.5rem 0 0 1.25rem; color: #1c1c1c; padding-left: 1rem;">
+          <li style="color: #1c1c1c;">Reforzar la educación del paciente sobre prevención de caídas.</li>
+          <li style="color: #1c1c1c;">Promover la atención al caminar y evitar prisas o cambios bruscos de postura.</li>
+          <li style="color: #1c1c1c;">Mantener espacios libres de obstáculos y con buena iluminación.</li>
+          <li style="color: #1c1c1c;">Valorar la necesidad de apoyo físico o ayudas técnicas si el paciente presenta inestabilidad.</li>
         </ul>
       </div>
     `;
   }
 
   return `
-    <div class="care-measures">
-      <p><strong>Medidas de cuidado y precauciones:</strong></p>
-      <ul>
-        <li>Reevaluar la condición clínica si cambian los síntomas o la movilidad.</li>
-        <li>Mantener hábitos de seguridad en el hogar y evitar riesgos de tropiezo.</li>
-        <li>Continuar con la supervisión habitual del estado del paciente.</li>
+    <div class="care-measures" style="color: #1c1c1c; line-height: 1.5;">
+      <p style="color: #1c1c1c; margin-bottom: 0.5rem;"><strong>Medidas de cuidado y precauciones:</strong></p>
+      <ul style="margin: 0.5rem 0 0 1.25rem; color: #1c1c1c; padding-left: 1rem;">
+        <li style="color: #1c1c1c;">Reevaluar la condición clínica si cambian los síntomas o la movilidad.</li>
+        <li style="color: #1c1c1c;">Mantener hábitos de seguridad en el hogar y evitar riesgos de tropiezo.</li>
+        <li style="color: #1c1c1c;">Continuar con la supervisión habitual del estado del paciente.</li>
       </ul>
     </div>
   `;
