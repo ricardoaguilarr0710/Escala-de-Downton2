@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escala de Downton</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <h1>ESCALA DE DOWNTON</h1>
+        <p class="subtitle">Escala de riesgo de caída</p>
+      </header>
+
+      <section class="summary-table" aria-label="Tabla de riesgo">
+        <table>
+          <thead>
+            <tr>
+              <th>Escala de riesgo de caídas</th>
+              <th>Alto riesgo &gt; 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Caídas previas</td>
+              <td>
+                <div class="row-choice">
+                  <span>No</span>
+                  <span class="score-pill score-0">0</span>
+                </div>
+                <div class="row-choice">
+                  <span>Sí</span>
+                  <span class="score-pill score-1">1</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Medicamentos</td>
+              <td>
+                <div class="row-choice">
+                  <span>Ninguno</span>
+                  <span class="score-pill score-0">0</span>
+                </div>
+                <div class="row-choice">
+                  <span>Tranquilizantes, sedantes, diuréticos, antidepresivos, otros</span>
+                  <span class="score-pill score-1">1</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Déficits sensoriales</td>
+              <td>
+                <div class="row-choice">
+                  <span>Ninguno</span>
+                  <span class="score-pill score-0">0</span>
+                </div>
+                <div class="row-choice">
+                  <span>Alteraciones visuales, auditivas</span>
+                  <span class="score-pill score-1">1</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Estado mental</td>
+              <td>
+                <div class="row-choice">
+                  <span>Orientado</span>
+                  <span class="score-pill score-0">0</span>
+                </div>
+                <div class="row-choice">
+                  <span>Confuso</span>
+                  <span class="score-pill score-1">1</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Deambulación</td>
+              <td>
+                <div class="row-choice">
+                  <span>Normal</span>
+                  <span class="score-pill score-0">0</span>
+                </div>
+                <div class="row-choice">
+                  <span>Segura con ayuda, insegura</span>
+                  <span class="score-pill score-1">1</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-grid" aria-label="Información de los parámetros">
+        <article class="info-card">
+          <h2>Caídas previas</h2>
+          <p>
+            El antecedente de caídas es uno de los mejores predictores de futuros eventos.
+            Las personas que ya han caído tienen mayor probabilidad de volver a caer por
+            factores de equilibrio, fuerza o entorno.
+          </p>
+          <div class="importance">
+            <strong>¿Por qué es importante?</strong>
+            <span>Se asocia con mayor riesgo de lesiones y fragilidad funcional.</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h2>Medicamentos</h2>
+          <p>
+            Algunos medicamentos, especialmente sedantes, diuréticos y antidepresivos,
+            pueden disminuir la atención, provocar mareos o alterar el equilibrio.
+          </p>
+          <div class="importance">
+            <strong>¿Por qué es importante?</strong>
+            <span>Disminuyen la estabilidad postural y aumentan la probabilidad de caídas.</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h2>Déficits sensoriales</h2>
+          <p>
+            La pérdida visual o auditiva afecta la percepción del entorno y la capacidad para
+            detectar obstáculos, espejos de suelo, escalones o cambios de nivel.
+          </p>
+          <div class="importance">
+            <strong>¿Por qué es importante?</strong>
+            <span>Reduce la orientación espacial y la respuesta ante riesgos ambientales.</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h2>Estado mental</h2>
+          <p>
+            La desorientación o la confusión incrementan el riesgo porque la persona puede
+            no valorar adecuadamente el entorno ni responder con rapidez a los peligros.
+          </p>
+          <div class="importance">
+            <strong>¿Por qué es importante?</strong>
+            <span>La atención y la orientación son esenciales para caminar con seguridad.</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h2>Deambulación</h2>
+          <p>
+            La marcha inestable o insegura refleja deterioro del equilibrio, debilidad muscular,
+            fatiga o problemas neurológicos. Esta variable es especialmente útil para valorar
+            la movilidad del paciente.
+          </p>
+          <div class="importance">
+            <strong>¿Por qué es importante?</strong>
+            <span>La movilidad insegura es un indicador temprano de riesgo de caída.</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="assessment-panel" aria-label="Valoración del paciente">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Valoración clínica</p>
+            <h2>Valoración de un paciente</h2>
+          </div>
+          <div class="score-box">
+            <span>Puntuación total</span>
+            <strong id="total-score">0</strong>
+          </div>
+        </div>
+
+        <div class="assessment-content">
+          <form id="risk-form" class="risk-form">
+            <label class="check-item">
+              <input type="checkbox" name="caidasPrevias" value="1" />
+              <span>Caídas previas</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="medicamentos" value="1" />
+              <span>Uso de medicamentos asociados a riesgo</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="deficitsSensoriales" value="1" />
+              <span>Déficits sensoriales</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="estadoMental" value="1" />
+              <span>Estado mental alterado</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="deambulacion" value="1" />
+              <span>Deambulación insegura</span>
+            </label>
+          </form>
+
+          <div class="risk-result" id="risk-result">
+            <p>Riesgo actual:</p>
+            <h3>Sin riesgo identificado</h3>
+            <small>Se recomienda reevaluar si cambia la condición clínica del paciente.</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
